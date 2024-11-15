@@ -6,4 +6,5 @@ This script is designed to monitor the JS8Call application for various received 
 - N1MM+ with County Mapper - Available for Windows.
 - GridTracker - Available for Windows, Mac, Linux, Raspberry Pi OS
 - GeoChron Digital Displays - OS Independent 
-- Yet Another APRS Client (YAAC) - Available for Windows, Mac, Linux, Raspberry Pi OS Any mapping application that can import ADIF files.
+- Yet Another APRS Client (YAAC) - Available for Windows, Mac, Linux, Raspberry Pi OS
+- Any mapping application that can import ADIF files.
