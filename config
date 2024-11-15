@@ -1,0 +1,157 @@
+[STATION]
+class = FTXn
+my_county = GWIN
+my_gridsquare = EM73
+my_name = John Doe
+operator = W4FAKE
+
+# class notes
+# FD = Field Day
+# FDSn = Field Day Saturday
+# FTXn = Field Training Exercise
+# RTTY = RTTY Roundup
+# <BLANK> = No contest
+
+[JS8Call]
+host = 127.0.0.1
+port = 2217
+
+[AUTH]
+enabled = true
+token = fixme
+
+[N1MM]
+enabled = false
+host = 127.0.0.1
+port = 2237
+
+[GRIDTRACKER]
+enabled = false
+host = 127.0.0.1
+port = 2237
+
+[GEOSERVER]
+enabled_msg = false
+enabled_spot = false
+host = 127.0.0.1
+port = 23000
+token = fixme
+
+[YAAC]
+enabled = false
+logfile = jsmapper.csv
+
+[ADIF]
+enabled = false
+logfile = jsmonitor.adi
+
+[SMTP]
+enabled = false
+host = 127.0.0.1
+port = 25
+user = 
+pass = 
+mailfrom = sender@email.com
+mailto = user@email.com
+
+[GREEN]
+# Used with INFO messages.
+search = PIR1=G
+map = MODE:JT4A
+color = #00f900
+aprs = ['\','W']
+
+[YELLOW]
+# Used with INFO messages.
+search = PIR1=Y
+map = MODE:JT4B
+color = #fffb00
+aprs = ['\','U']
+
+[RED]
+# Used with INFO messages.
+search = PIR1=R
+map = MODE:JT4C
+color = #ff2600
+aprs = ['/',':']
+
+[UNKNOWN]
+# Used with INFO messages.
+search = PIR1=U
+map = MODE:JT4D
+color = #ff9300
+aprs = ['\','0']
+
+[NOPIR]
+# Used to indicate that an INFO message was found, but no PIR was detected.
+map = MODE:JT4E
+color = #00fdff
+aprs = ['\','.']
+
+[NOINFO]
+# Used to indicate no INFO message detected.
+map = MODE:JT4F
+color = #ff40ff
+aprs = ['\','!']
+
+[STATUS]
+# Used to indicate STATUS message detected.
+map = MODE:JT4G
+color = #942192
+aprs = ['\',')']
+
+[GRIDS]
+# Extract GRIDS from INFO message content
+frominfo = true
+
+# Max grid squares length sent to loggers
+gridlength = 6
+
+# Map SNR reports for everyone (true), or only those for this station (false)
+map_all = true
+
+# Will map CQ messages
+map_cq = true
+
+# Will map HEARTBEAT messages
+map_heartbeat = true
+
+# Will map INFO messages
+map_info = true
+
+# Will map STATUS messages
+map_status = true
+
+# Will map manual LOG QSO reports
+map_log = true
+
+# Will map QSO messages
+map_qso = true
+
+# Will map signal reports (SNR)
+map_snr = true
+
+# Close JS8Call Monitor when JS8Call exits
+auto_close = false
+
+[DATABASES]
+location = c:\ham0\
+
+# Offline Lookups
+FccData = false
+HamCallCD = false
+RacCD = false
+LocalDB = false
+LocalDB_learn = false
+Collect_Rejects = false
+
+# Online Lookups
+Callook = false
+HamCallOnline = false
+HCusername = 
+HCpassword = 
+
+[DEBUG]
+consolelevel = 1
+logfilelevel = 1
+logfile = js8callmonitor.log
